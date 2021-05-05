@@ -1,3 +1,5 @@
+package apiiro;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -32,7 +34,7 @@ public class ApiClass {
         } catch (NoSuchPaddingException e) {
             e.printStackTrace();
         }
-        
+
         Properties properties = new Properties();
         properties.setProperty(CryptoCipherFactory.CLASSES_KEY, CipherProvider.OPENSSL.getClassName());
 
